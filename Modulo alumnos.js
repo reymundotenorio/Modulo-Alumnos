@@ -79,12 +79,6 @@ servidor.get('/materias',(req,res)=>{
     res.end();
 });
 
-// servidor.get('/alumno/:id',(req,res)=>{
-//     const idAlumno = req.params.id;
-//     res.send(alumnos[idAlumno]);
-//     res.end();
-// });
-
 servidor.get('/alumno/:id',(req,res)=>{
     const idAlumno = req.params.id;
     res.send(alumnos[idAlumno].nombre);
